@@ -3,30 +3,31 @@ num2 = int(input("Enter the second number: "))
 operation = input("Choose your operation (+, _, *, /): ")
 
 match operation:
-    case operation1:
+    case addition:
         if operation == "+":
             result = num1 + num2
             print(f"The result is {result}.")
       
 match operation:           
-    case operation2:
+    case subtract:
         if operation == "-":
             result = num1 - num2
             print(f"The result is {result}.")
             
 match operation:           
-    case operation3:
+    case multiply:
         if operation == "*":
             result = num1 * num2
             print(f"The result is {result}.")
+
             
 match operation:           
-    case operation4:
+    case divide:
         if operation == "/" and num2 != 0:
             result = num1 / num2
             print(f"The result is {result}.")
         else:
-            print("Cannot divide by zero")
+            print("Cannot divide by zero.")
 
 
             
