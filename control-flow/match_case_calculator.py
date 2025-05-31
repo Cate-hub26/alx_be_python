@@ -14,7 +14,7 @@ match choose_operation:
             result = num1 * num2
             print(f"The result is {result}.")  
     case "/":
-        if operation == "/" and num2 != 0:
+        if choose_operation == "/" and num2 != 0:
             result = num1 / num2
             print(f"The result is {result}.")
         else:
