@@ -1,9 +1,9 @@
 def display_menu():
-    #print("Shopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item ")
-    print("1. Remove Item ")
-    print("1. View Item ")
-    print("1. Exit ")
+    print("2. Remove Item ")
+    print("3. View Item ")
+    print("4. Exit ")
     
 def main():
     shopping_list = []
