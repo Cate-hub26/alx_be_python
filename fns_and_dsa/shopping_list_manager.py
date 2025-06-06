@@ -1,5 +1,5 @@
 def display_menu():
-    print("Shopping List Manager")
+    #print("Shopping List Manager")
     print("1. Add Item ")
     print("1. Remove Item ")
     print("1. View Item ")
