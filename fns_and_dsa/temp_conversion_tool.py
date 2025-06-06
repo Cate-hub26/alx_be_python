@@ -20,7 +20,7 @@ elif units == "C":
     print(f"{temperature}°C is {temp}°F")
     
 else:
-    print("Invalid input!")
+    print("Invalid temperature. Please enter a numeric value.")
       
     
 
