@@ -26,9 +26,9 @@ class TestSimpleCalculator(unittest.TestCase):
         
     def test_division(self):
         """Test the multipliaction method."""
-        self.assertEqual(self.calc.division(12, 3), 4)
-        self.assertEqual(self.calc.multiply(6, -3), 2)
-        self.assertEqual(self.calc.subtract(10, 0), ZeroDivisionError)
+        self.assertEqual(self.calc.divide(12, 3), 4)
+        self.assertEqual(self.calc.divide(6, -3), 2)
+        self.assertEqual(self.calc.divide(10, 0), ZeroDivisionError)
         
 if __name__ == "__main__":
     unittest.main()
