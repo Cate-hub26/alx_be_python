@@ -22,7 +22,7 @@ class BankAccount:
         print(f"Current Balance: ${self.account_balance}")
         return f"Current Balance: ${self.account_balance}."
        
-bankaccount = BankAccount(11770.0)
-bankaccount.deposit(67.0)
-bankaccount.withdraw(67.0)
+bankaccount = BankAccount(250.0)
+bankaccount.deposit(50.0)
+bankaccount.withdraw(20.0)
 bankaccount.display_balance()
