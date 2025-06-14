@@ -23,6 +23,6 @@ class BankAccount:
         return f"Current Balance: ${self.account_balance}."
        
 bankaccount = BankAccount(10000.00)
+bankaccount.deposit(2000.0)
+bankaccount.withdraw(230.0)
 bankaccount.display_balance()
-bankaccount.deposit(2000.00)
-bankaccount.withdraw(230.00)
