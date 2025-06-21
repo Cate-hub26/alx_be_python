@@ -20,7 +20,7 @@ class PrintBook(Book):
         self.page_count = page_count
         
     def __str__(self):
-        return f"{self.title} by {self.author}, File Size: {self.file_size}"
+        return f"{self.title} by {self.author}, File Size: {self.page_count}"
         
 class Library:
     def __init__(self):
