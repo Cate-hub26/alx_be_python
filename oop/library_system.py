@@ -23,31 +23,43 @@ class PrintBook(Book):
         return f"{self.title} by {self.author}, File Size: {self.file_size}"
         
 class Library:
-    def __init__(self, books):
-        self.books = books
-        
-    def add_book(self, book):
+    def __init__(self):
         self.books = []
-        self.book = book
-        if self.book == Book():
-            self.books.append(book)
+
+    def add_book(self, book):
+        self.books.append(book)
+
+    def list_books(self):
+        for book in self.books:
+            print(book)
+
+    
+    
+    #def __init__(self, books):
+        #self.books = books
+        
+    #def add_book(self, book):
+        #self.books = []
+        #self.book = book
+        #if self.book == Book():
+            #self.books.append(book)
             
-        elif self.book == EBook():
-            self.books.append(book)
+        #elif self.book == EBook():
+           # self.books.append(book)
             
-        elif self.book == PrintBook():
-            self.books.append(book)
+        #elif self.book == PrintBook():
+            #self.books.append(book)
             
-    def list_books(self, books):
-        self.books = books
-        if books == Book():
-            print(f"{self.title} by {self.name}")
+    #def list_books(self, books):
+        #self.books = books
+        #if books == Book():
+            #print(f"{self.title} by {self.name}")
             
-        elif books == EBook():
-            print(f"{self.title} by {self.author}, File Size: {self.file_size}")
+        #elif books == EBook():
+            #print(f"{self.title} by {self.author}, File Size: {self.file_size}")
             
-        elif books == PrintBook():
-            print(f"{self.title} by {self.author}, Page Count: {self.page_count}")
+        #elif books == PrintBook():
+            #print(f"{self.title} by {self.author}, Page Count: {self.page_count}")
         
         
     
