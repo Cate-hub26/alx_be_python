@@ -28,16 +28,16 @@ class Library:
         self.books = books
         
     def add_book(self, book):
-        self.book = book
-        books = []
-        if self.book == Book():
-            books.append(book)
+        self.books = []
+
+        if book == Book():
+            self.books.append(book)
             
         elif self.book == EBook():
-            books.append(book)
+            self.books.append(book)
             
         elif self.book == PrintBook():
-            books.append(book)
+            self.books.append(book)
             
     def list_books(self):
         if self.book == Book():
