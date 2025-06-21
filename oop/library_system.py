@@ -30,24 +30,24 @@ class Library:
     def add_book(self, book):
         self.books = []
 
-        if self.book == Book():
+        if book == Book():
             self.books.append(book)
             
-        elif self.book == EBook():
+        elif book == EBook():
             self.books.append(book)
             
-        elif self.book == PrintBook():
+        elif book == PrintBook():
             self.books.append(book)
             
     def list_books(self, books):
         self.books = books
-        if self.books == Book():
+        if books == Book():
             print(f"{self.title} by {self.name}")
             
-        elif self.books == EBook():
+        elif books == EBook():
             print(f"{self.title} by {self.name}, File Size: {self.file_size}")
             
-        elif self.books == PrintBook():
+        elif books == PrintBook():
             print(f"{self.title} by {self.name}, Page Count: {self.page_count}")
         
         
