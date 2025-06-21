@@ -4,24 +4,28 @@ class Book:
         self.author = author
         
     def __str__(self):
-        return f"{self.title} by {self.name}"
+        return f"{self.title} by {self.author}"
 
 class EBook(Book):
-    def __init__(self, title, author, file_size):
-        super().__init__(title, author, file_size)
+    def __init__(self, title, author):
+        super().__init__(title, author)
+        
+    def __init__(self, file_size):
+        self.file_size = file_size
         
     def __str__(self):
-        return f"{self.title} by {self.name}, File Size: {self.file_size}"
-        
-    #def __init__(self, file_size):
-        #self.file_size = file_size
+        return f"{self.title} by {self.author}, File Size: {self.file_size}"
+    
         
 class PrintBook(Book):
-    def __init__(self, title, author, page_count):
-        super().__init__(title, author, page_count)
+    def __init__(self, title, author):
+        super().__init__(title, author)
+        
+    def __init__(self, page_count):
+        self.file_size = page_count
         
     def __str__(self):
-        return f"{self.title} by {self.name}, File Size: {self.file_size}"
+        return f"{self.title} by {self.author}, File Size: {self.file_size}"
         
 class Library:
     def __init__(self, books):
@@ -36,19 +40,18 @@ class Library:
         elif book == EBook():
             self.books.append(book)
             
-        elif book == PrintBook():
+        elif self.book == PrintBook():
             self.books.append(book)
             
-    def list_books(self, books):
-        self.books = books
-        if books == Book():
-            print(f"{self.title} by {self.name}")
+    def list_books(self, book):
+        if book == Book():
+            print(book)
             
-        elif books == EBook():
-            print(f"{self.title} by {self.name}, File Size: {self.file_size}")
+        elif book == EBook():
+            print(book)
             
-        elif books == PrintBook():
-            print(f"{self.title} by {self.name}, Page Count: {self.page_count}")
+        elif book == PrintBook():
+            print(book)
         
         
     
